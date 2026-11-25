@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - NaviGPX</title>
+  <style>
+    :root {
+      --primary: #0077CC;
+      --primary-dark: #005599;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text: #1E293B;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --accent: #10B981;
+      --accent-bg: rgba(16, 185, 129, 0.08);
+      --badge-bg: rgba(0, 119, 204, 0.1);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #38BDF8;
+        --primary-dark: #0284C7;
+        --bg: #0F172A;
+        --card-bg: #1E293B;
+        --text: #F1F5F9;
+        --text-muted: #94A3B8;
+        --border: #334155;
+        --accent: #34D399;
+        --accent-bg: rgba(52, 211, 153, 0.12);
+        --badge-bg: rgba(56, 189, 248, 0.15);
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 28px 16px;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px -5px rgba(0,0,0,0.06);
+      padding: 44px 38px;
+    }
+    @media (max-width: 640px) {
+      .container {
+        padding: 24px 20px;
+        border-radius: 14px;
+      }
+    }
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--badge-bg);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 12px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .meta code {
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 14px;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    p, li {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .callout {
+      background: var(--accent-bg);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .callout p {
+      margin: 0;
+      font-weight: 500;
+      color: var(--text);
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: rgba(125,125,125,0.15);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">GOOGLE PLAY COMPLIANT</span>
+      <h1>Privacy Policy for NaviGPX</h1>
+      <div class="meta">
+        <strong>Application:</strong> NaviGPX (<code>com.softguide.navigpx</code>)<br>
+        <strong>Developer:</strong> SoftGuide &bull; <strong>Effective Date:</strong> November 24, 2026
+      </div>
+    </header>
+
+    <div class="callout">
+      <p>&check; <strong>Offline-First Privacy Guarantee:</strong> NaviGPX does not collect, transmit to remote servers, sell, or share your GPS location, GPX tracks, or personal data. All trail computations, route deviation alerts, and map rendering are performed strictly locally on your device.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to <strong>NaviGPX</strong> ("we", "our", or "us"). NaviGPX is an offline-first GPS trail navigation, GPX track visualizer, and topographic map viewing application designed specifically for hikers, mountain climbers, trail runners, cyclists, and outdoor enthusiasts.</p>
+    <p>This Privacy Policy explains how our application accesses, processes, and protects your device data in full compliance with the <strong>Google Play Developer Program Policies</strong>, specifically regarding sensitive and background location permissions.</p>
+
+    <h2>2. Location Data We Access and Process</h2>
+
+    <h3>A. Precise and Approximate Location (Foreground / While in Use)</h3>
+    <p>We access high-accuracy GPS coordinates (<code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code>) solely to:</p>
+    <ul>
+      <li>Display your live current position as a beacon on the topographic map.</li>
+      <li>Calculate remaining trail distance, movement speed, elevation, and elevation gain/loss along your active GPX track.</li>
+      <li>Compute the orthogonal distance between your current location and the nearest polyline segment of your GPX track.</li>
+    </ul>
+
+    <h3>B. Background Location Tracking (Screen Off / Minimized)</h3>
+    <p>NaviGPX requests background location access (<code>ACCESS_BACKGROUND_LOCATION</code> and <code>FOREGROUND_SERVICE_LOCATION</code>):</p>
+    <ul>
+      <li><strong>Purpose of Background Access:</strong> Outdoor navigation frequently requires users to place their mobile device in a pocket or backpack while hiking, running, or cycling, keeping the screen turned off to conserve battery.</li>
+      <li><strong>Safety Functionality:</strong> An ongoing Android Foreground Service with an active notification monitors your trail position in real-time. If you deviate more than the configured threshold (e.g. &gt;10 meters) from your planned track, NaviGPX immediately triggers an audio alarm and vibration alert to prevent you from getting lost in remote or unfamiliar wilderness.</li>
+      <li><strong>User Control:</strong> Background tracking is completely optional and only activates if you explicitly choose to grant "Allow all the time" permission. You can revoke this permission at any time in your device's Android System Settings.</li>
+    </ul>
+
+    <h2>3. Local Device Storage and File Access</h2>
+    <p>We access local device storage (<code>READ_EXTERNAL_STORAGE</code> / System Document Picker) strictly to:</p>
+    <ul>
+      <li>Import, parse, and render <code>.gpx</code> files that you explicitly select through the Android system file picker.</li>
+      <li>Store and read downloaded OpenStreetMap tile packages within the app's sandboxed storage for complete offline map access without cellular or Wi-Fi connectivity.</li>
+    </ul>
+    <p><strong>We do not access</strong> your photos, media, contacts, phone records, or any personal files outside of the GPX files you explicitly load.</p>
+
+    <h2>4. Hardware Sensors (Compass and Magnetometer)</h2>
+    <p>NaviGPX reads your device's hardware magnetometer and accelerometer sensors in real-time to orient the compass needle and rotate the map in "Heading-Up" mode to align with the direction you are facing. Sensor data is processed live in volatile memory and is never logged, stored, or transmitted.</p>
+
+    <h2>5. Zero Data Sharing, Monetization, or Sale</h2>
+    <p><strong>We DO NOT sell, rent, monetize, or transmit your location data, routes, or personal information to any third parties or advertisers.</strong></p>
+    <ul>
+      <li>No third-party tracking, behavioral profiling, or analytics SDKs are embedded in NaviGPX.</li>
+      <li>No advertising networks are integrated into the application.</li>
+      <li>No account registration, login, username, email address, or phone number is required to use any feature of NaviGPX.</li>
+    </ul>
+
+    <h2>6. Third-Party Map Tiles (OpenStreetMap)</h2>
+    <p>When the application is in ONLINE mode, map image tiles are fetched over encrypted HTTPS from the public OpenStreetMap Foundation servers (<code>tile.openstreetmap.org</code>). OpenStreetMap receives standard HTTP request headers necessary to deliver tile graphics. <strong>No user GPS coordinates, track geometries, or device identifiers are ever transmitted to map servers.</strong> When OFFLINE mode is enabled, network connections are completely paused, and tiles are loaded exclusively from local storage.</p>
+
+    <h2>7. Data Retention, Security, and User Deletion Rights</h2>
+    <p>Because NaviGPX is built upon an offline-first architecture, your navigational data does not reside on external cloud servers, eliminating the risk of remote server data breaches. You maintain complete ownership and control over your locally stored data:</p>
+    <ul>
+      <li>You can delete downloaded offline map regions at any time through the <em>Saved Offline Regions</em> menu.</li>
+      <li>You can clear loaded GPX track history through the <em>GPX History</em> menu.</li>
+      <li>You can purge all application cache and stored data at any time via <code>Android Settings &gt; Apps &gt; NaviGPX &gt; Storage &gt; Clear Data</code>.</li>
+      <li>Uninstalling the application permanently deletes all local files, cached map tiles, and preferences.</li>
+    </ul>
+
+    <h2>8. Children's Privacy</h2>
+    <p>NaviGPX is designed for general audiences and outdoor enthusiasts. We do not knowingly collect, store, or process personal information from children under the age of 13.</p>
+
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect app updates or regulatory requirements. Any updates will be published with a revised "Effective Date". We encourage you to review this page periodically.</p>
+
+    <h2>10. Contact Information</h2>
+    <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data privacy while using NaviGPX, please contact us:</p>
+    <p>
+      <strong>Developer:</strong> SoftGuide<br>
+      <strong>Application:</strong> NaviGPX<br>
+      <strong>Email:</strong> <a href="mailto:softguide.cs@gmail.com">support@softguide.id</a><br>      
+    </p>
+
+    <footer>
+      &copy; 2026 SoftGuide. All rights reserved. NaviGPX &bull; Version 1.0.0
+    </footer>
+  </div>
+</body>
+</html>
